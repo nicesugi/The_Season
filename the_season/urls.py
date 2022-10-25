@@ -21,12 +21,10 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('user/', include('user.urls')),
-    path('article/', include('article.urls')),
+    path("admin/", admin.site.urls),
+    path("user/", include("user.urls")),
+    path("article/", include("article.urls")),
 ]
 
 # MEDIA_URL로 들어오는 요청에 대해 MEDIA_ROOT 경로를 탐색한다.
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-

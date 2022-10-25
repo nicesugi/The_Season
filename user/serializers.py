@@ -4,15 +4,16 @@ from user.models import User as UserModel
 
 EMAIL = ("@naver.com", "@gmail.com", "@kakao.com")
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserModel
         fields = ["username", "password", "email", "fullname", "join_date"]
-        
+
         extra_kwargs = {
             "password": {"write_only": True},
         }
-        
+
     def validate(self, data):
         if not len(data.get("username", "")) >= 6:
             raise serializers.ValidationError(
@@ -26,25 +27,25 @@ class UserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 detail={"error": "password의 길이는 6자리 이상이어야 합니다."}
             )
-            
+
         return data
-        
+
     def create(self, validated_data):
         password = validated_data.pop("password", "")
-        
+
         user = UserModel(**validated_data)
         user.set_password(password)
         user.save()
-        
+
         return user
-    
+
     def update(self, instance, validated_data):
-        
-        for key,value in validated_data.items():
+
+        for key, value in validated_data.items():
             if key == "password":
                 instance.set_password(value)
                 continue
             setattr(instance, key, value)
         instance.save()
-        
+
         return instance
