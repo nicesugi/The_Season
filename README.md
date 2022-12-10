@@ -1,8 +1,8 @@
-# The season of N.11 &nbsp;&nbsp;|&nbsp;&nbsp; 2022년 6월 28일 - 2022년 7월 6일 (1주)
+# The season
 
 ### 서비스 소개 </br>
 
-<details>
+<details open>
 <summary>
 유화 제작 인공지능 기술로 이미지를 변환시켜주는 SNS 입니다.
 </summary>
@@ -69,15 +69,14 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 <br>
 
 ## 와이어 프레임
-<details>
-<summary> Click ! </summary>
+
 <img width="1242" alt="mockup" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FM7SBU%2FbtrFZdSFHcO%2FpEnrZBks6tez01kwFxsowK%2Fimg.png">
-</details>
+
 
 <br>
 
 ## 기능 명세서
-<details>
+<details open>
 <summary> 회원가입 / 로그인 </summary>
 <div markdown="1">
 
@@ -91,7 +90,7 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-<details>
+<details open>
 <summary> 메인 페이지 </summary>
 <div markdown="1">
 
@@ -104,7 +103,7 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-<details>
+<details open>
 <summary> 업로드 페이지 </summary>
 <div markdown="1">
 
@@ -117,7 +116,7 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-<details>
+<details open>
 <summary> 마이 페이지 </summary>
 <div markdown="1">
 
@@ -130,7 +129,7 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-<details>
+<details open>
 <summary> 게시글 상세 페이지 </summary>
 <div markdown="1">
 
@@ -141,7 +140,7 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-<details>
+<details open>
 <summary> 게시글 수정 페이지 </summary>
 <div markdown="1">
 
@@ -156,28 +155,21 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 </div>
 </details>
 
-</details>
+</details open>
 <br>
 
 
 ## 데이터베이스 ERD
-<details>
-<summary> Click ! </summary>
-<img width="1213" alt="season" src="https://user-images.githubusercontent.com/104303285/185300027-4c89cd18-10f6-478c-9044-996720b03c6c.png">
-</details>
+<img width="700" alt="season" src="https://user-images.githubusercontent.com/104303285/185300027-4c89cd18-10f6-478c-9044-996720b03c6c.png">
+
 
 <br>
 
 ## API 설계
-<details>
-<summary> ARTICLE 앱 </summary>
 <img width="1176" alt="스크린샷 2022-08-18 오후 2 50 40" src="https://user-images.githubusercontent.com/104303285/185303999-8ad88f51-c369-4288-910b-624a92ce4e64.png">
-</details>
 
-<details>
-<summary> USER 앱 </summary>
 <img width="1141" alt="스크린샷 2022-08-18 오후 2 50 17" src="https://user-images.githubusercontent.com/104303285/185304009-60d545a6-3dec-4a4e-a468-bf15c03fba25.png">
-</details>
+
 
 <br>
 
@@ -185,21 +177,14 @@ Infra : <img src="https://img.shields.io/badge/Gunicorn-499848?style=flat-square
 
 ### GitHub
 
-<details>
-<summary> 브랜치 </summary>
-<br>
-(app 별로)
+- 브랜치 (app으로 나눔)
+    -   article
+    -   nst -> 기능 테스트 후 article 브랜치로 이동 후 삭제
+    -   user
 
--   article
--   nst -> 기능 테스트 후 article 브랜치로 이동
--   user
-
-</details>
 <br>
 
-<details>
-<summary> 커밋 메세지 </summary>
-<br>
+-  커밋 메세지 
 
 ```
 Commit Type
@@ -222,4 +207,3 @@ Subject
 - 72자를 넘기지 않고, 모든 커밋에 본문 내용을 작성할 필요는 없음.
 ```
 
-</details>
